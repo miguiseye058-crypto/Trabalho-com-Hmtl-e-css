@@ -1,0 +1,89 @@
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f4f7f6;
+padding: 20px;
+color: #333;
+}
+/* Estilo da tabela */
+.tabela-estilizada{
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;    /* Remove espaços entre as células */
+    margin: 25px auto;
+    font-size: 18px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 8px 8px; /* Bordas arredondadas no topo */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas arredondadas */
+}
+.tabela-estilizada thead th {
+    padding: 12px 15px;
+    text-align: left;
+    background-color: lab(49.89% 88.31 -72.59); /* Cor de fundo do cabeçalho */
+    color: #ffffff; /* Cor do texto do cabeçalho */
+    text-align: left; /* Centraliza o texto do cabeçalho */
+}
+/* Espaçamento entre as linhas da tabela */
+.tabela-estilizada  td,
+.tabela-estilizada  th {
+    padding: 10px 15px;
+}
+/*linha separadora na parte inferior das células da tabela*/
+.tabela-estilizada  tbody tr {
+    border-bottom: 1px solid #dddd;
+}
+   
+/* Efeito de alternância de cores nas linhas da tabela:
+linhas pares recebem uma cor de fundo diferente para melhorar a legibilidade */
+
+.tabela-estilizada  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+/* Efeito de destaque ao passar o mouse sobre uma linha da tabela */
+.tabela-estilizada  tbody tr:hover {
+    background-color: #ffffff;
+    color: lab(49.89% 88.31 -72.59); /* Cor do texto ao passar o mouse */
+    transition: 0.3s ease; /* Transição suave para a mudança de cor */
+    cursor: pointer;
+}
+
+/*borda mais grossa no final do corpo da tabela*/
+.tabela-estilizada  tbody tr:last-of-type {
+    border-bottom: 2px solid lab(49.89% 88.31 -72.59); /* Linha separadora mais grossa na última linha */
+}
+
+/* estilização do rodapé */
+.tabela-estilizada tfoot{
+    background-color: hsla(0, 1%, 68%, 0.884);
+    color: lab(49.89% 88.31 -72.59);
+}
+/* deixar texto do radapé a direita */
+.texto-direita{
+text-align: right;
+}
+
+.Status-pago{
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 8px ;
+    background-color: lab(49.89% 88.31 -72.59);
+    border-radius: 20px;
+    color:#f3f3f3
+}
+.Status-pen{
+    display: inline-block;
+    padding: 8px 10px;
+    margin-top: 10px ;
+    background-color: lch(67.54% 78.44 68.73);
+    border-radius: 20px;
+    color:#f3f3f3
+}
+.Status-deve{
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 10px ;
+    background-color: oklab(59.44199999999999% 0.21396 0.11587);
+    border-radius: 20px;
+    color:#f3f3f3
+}
